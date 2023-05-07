@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+      }
+
+      .container h2 {
+        text-align: center;
+      }
+
+      .container p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-group input[type="text"],
+      .form-group textarea {
+        width: 95%;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        border: 2px solid gray;
+      }
+      .form-group input[type="text"]:focus,
+      .form-group textarea:focus {
+        border: 1px solid #2de833;
+      }
+
+      .form-group textarea {
+        height: 100px;
+      }
+
+      .form-group button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 14px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .form {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 14px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .form-group button:hover,
+      .form:hover {
+        background-color: #2de833;
+      }
+    </style>
+    <script>
+      function showMessage() {
+        var a = document.getElementById("name").value;
+        var b = document.getElementById("email").value;
+        var c = document.getElementById("message").value;
+        if (a != "" && b != "" && c != "") {
+          alert("Message sent successfully!");
+        }
+      }
+    </script>
+    <link rel="icon" type="image/png" href="image/contact.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Please fill out the form below to get in touch with us.</p>
+      <form>
+        <div class="form-group f1">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            class="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group f1">
+          <label for="email">Your Email:</label>
+          <input
+            type="text"
+            id="email"
+            class="name"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group f1">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            class="name"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group f1">
+          <button onclick="document.location='anime.html'">back</button>
+          <button type="submit" class="form" onclick="showMessage()">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

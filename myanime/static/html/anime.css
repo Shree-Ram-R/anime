@@ -1,0 +1,271 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #272c34;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+.container-fluid {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.cols {
+  color: #26de81;
+  font-variant: small-caps;
+}
+.logo {
+  font-size: 1.7em;
+  font-family: "Rubik Pixels", cursive;
+}
+.logo2 {
+  text-align: center;
+  font-size: 1.3em;
+}
+.bar {
+  right: 0;
+  top: 2.5%;
+  width: 35px;
+  height: 25px;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  display: grid;
+  align-content: space-between;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.bar .bar1 {
+  display: block;
+  background-color: #26de81;
+  height: 5px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.side .links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 19vw;
+  background-color: #fff;
+}
+.links {
+  transform: translateX(-500px);
+  transition: 0.8s;
+}
+.open .links {
+  transform: translateX(0px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.open .nav {
+  visibility: visible;
+  opacity: 1;
+}
+.side .links .link {
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 10px;
+  color: #272c34;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+}
+.side .links .link1 {
+  color: #26de81;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.side .links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.side .links .link:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: #26de81;
+}
+.title {
+  color: #26de81;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-family: "Rubik", sans-serif;
+}
+.box {
+  min-width: 200px;
+  height: 250px;
+  background-color: #26de81;
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #272c34;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+small {
+  color: silver;
+}
+section .b1 {
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  overflow-x: scroll;
+  padding: 0px 10px;
+  overflow-y: hidden;
+}
+
+h3 {
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 20px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+small {
+  font-size: 12px;
+}
+footer {
+  column-count: 2;
+  color: silver;
+  font-size: 10px;
+  margin: 0px 20px;
+  padding: 30px 0px;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+.foot {
+  color: #26de81;
+  font-weight: 700;
+
+  margin-top: 20px;
+  cursor: pointer;
+}
+.last {
+  text-align: end !important;
+  color: #26de81;
+  font-size: 10px;
+}
+.contact {
+  color: silver;
+  font-size: 10px;
+}
+b {
+  size: 123px;
+  color: #fff;
+}
+.contact a {
+  text-decoration: none;
+  color: silver;
+}
+.foot1 {
+  margin-left: 20px;
+}
+#text {
+  width: 35vw;
+  outline: none;
+  border: 1px solid #26de81;
+}
+label {
+  color: gainsboro;
+}
+.report1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.report1 {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  position: relative;
+  align-content: center;
+  display: none;
+}
+.report {
+  margin: 20px;
+  padding: 20px;
+}
+.report form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 50px;
+  justify-content: baseline;
+  align-content: center;
+}
+.head {
+  position: absolute;
+  left: 0;
+}
+.send {
+  border: none;
+  background-color: #26de81;
+  outline: none;
+  width: 50px;
+  height: 30px;
+}
+.report1:target {
+  display: block !important;
+  transition: 0.5s;
+}
+.remove {
+  display: none !important;
+}
+.send {
+  font-size: 12px;
+  border-radius: 3px;
+}
+.send:hover {
+  background-color: #42a976;
+}

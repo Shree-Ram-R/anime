@@ -2347,16 +2347,16 @@ label {
 ## OUTPUT:
 
 ### Home Page:
-![output](output/home.png)
+![output](home.png)
 
-### Contact Page:
-![output](output/trending.png)
+### Trending Page:
+![output](trending.png)
 
-### People Page:
-![output](output/contact.png)
+### contact Page:
+![output](contact.png)
 
-### About Page:
-![output](output/signup.png)
+### signup Page:
+![output](signup.png)
 
 
 ## Result:
